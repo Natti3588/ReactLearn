@@ -3,7 +3,10 @@ import { increment, decrement, reset, double } from "../store/counterSlice";
 import Child from "./Child";
 
 const Parent = () => {
+  // storeから値を読み込む
   const count = useSelector((state) => state.counter.count);
+
+  // dispatch関数を取得
   const dispatch = useDispatch();
 
   return (
